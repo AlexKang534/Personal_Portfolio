@@ -9,12 +9,12 @@
   --ff-primary: "Montserrat", sans-serif; /*primary font choice */
   --ff-secondary: "Oswald", sans-serif; /*secondary font choice */
 
-  --fw-reg: 300; /*font weights */
+  --fw-reg: 500; /*font weights */
   --fw-bold: 900;
 
-  --clr-light: #fff1e6; /*font colors */
-  --clr-dark: #403d39;
-  --clr-accent: #17c3b2;
+  --clr-light: #e7e7e7; /*font colors */
+  --clr-dark: #5f6366;
+  --clr-accent: #a9dbb8;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -300,11 +300,21 @@ header {
 
 .services {
   margin-bottom: 4em;
+  text-align: center;
+  width: 50;
 }
 
 .service {
-  max-width: 500px;
+  max-width: 350px;
   margin: 0 auto;
+}
+
+.service p {
+  text-align: center;
+}
+
+.portfolio-text {
+  color: var(--clr-light);
 }
 
 @media (min-width: 800px) {
@@ -322,6 +332,10 @@ header {
   margin: 0 auto;
 }
 
+.about-me__body {
+  font-weight: 550;
+}
+
 @media (min-width: 600px) {
   .about-me {
     flex-direction: column;
@@ -332,6 +346,10 @@ header {
 
   .section__title--about {
     grid-area: title;
+  }
+
+  .section__title-work {
+    color: var(--clr-accent);
   }
 
   .section__subtitle--about {
@@ -351,6 +369,7 @@ header {
 .my-work {
   background-color: var(--clr-dark);
   color: var(--clr-light);
+  text-align: center;
 }
 
 .portfolio {
